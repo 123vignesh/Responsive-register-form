@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" type="text/css" href="index.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+         rel = "stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src='select2/dist/js/select2.min.js' type='text/javascript'></script>
+
+  <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+  
+  <link href='select2/dist/css/select2.min.css' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  
+    <h1 class="ko">Register</h1>
+    <div id="menu-outer">
+        <div class="table">
+          <ul id="horizontal-list">
+            <li><a href="index.html">1.About yourself</a>&nbsp&nbsp</li>
+            <li><a href="Contact.html">2.Contact info</a>&nbsp&nbsp</li>
+            
+            <li><a href="Education.html">3.Education</a>&nbsp&nbsp</li>
+            <li><a href="Preview.html">4.Preview</a>&nbsp&nbsp</li>
+           
+          </ul>
+        </div>
+      </div>
+      <form id="maadu">
+<h2>Higher Education</h2>
+<input  id="eduWidth"><br><br>
+
+  
+
+<label>Skills</label><br>
+
+<div id="addHere"> 
+  <input type="text" id="skillAdd"/>
+</div>
+<div>
+  <br><input class="btn btn-primary" type="button" onclick=Glass() value="+Add Skills" />
+</div>
+
+
+  <div class="file-upload">
+    <label class="control_Resume  required">Resume</label><br>
+    <input class="file-upload__input" type="file" name="myFile[]" id="myFile" multiple>
+    <button class="file-upload__button" type="button">Upload</button>
+    <span class="file-upload__label"></span>
+  </div>
+
+  <div class="file-upload">
+    <label class="control_Education  required">Education Docs</label><br>
+    <input type="file" class="file-upload__input" name="myFile1[]" id="myFile1" multiple>
+    <button class="file-upload__button" type="button" >Upload</button><span class="file-upload__label"></span><br>
+    <small>Upload Educational related documents</small>
+</div>    
+
+</div><br><br>
+
+<a class="btn btn-primary" href="Contact.html" role="button">Previous</a>&nbsp&nbsp<a class="btn btn-primary" href="Preview.html" role="button">Preview</a>
+
+</form>
+        
+
+
+
+
+
+
+
+
+
+    
+</body>
+<script src="index.js">
+ 
+</script>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <h1>Register</h1>
+    <div id="menu-outer">
+        <div class="table">
+          <ul id="horizontal-list">
+            <li><a href="index.html">1.About yourself</a>&nbsp&nbsp</li>
+            <li><a href="Contact.html">2.Contact info</a>&nbsp&nbsp</li>
+            <li><a href="Education.html">3.Education</a>&nbsp&nbsp</li>
+            <li><a href="Preview.html">4.Preview</a>&nbsp&nbsp</li>
+           
+          </ul>
+        </div>
+      </div>
+
+      <h2>FeedBack</h2>
+
+<h4>Rate your experience</h4>
+
+<div class="radio-container">
+  <input type="radio" id="windows" name="os" />
+  <label for="windows">Very Unsatisfied</label>&nbsp&nbsp&nbsp&nbsp
+
+  <input type="radio" id="mac" name="os" />
+  <label for="mac">Very Satisfied</label>&nbsp&nbsp&nbsp&nbsp
+
+  <input type="radio" id="linux" name="os" />
+  <label for="linux">Satisfied</label>&nbsp&nbsp&nbsp&nbsp
+
+  <input type="radio" id="nux" name="os" />
+  <label for="linux">Neutral</label>&nbsp&nbsp&nbsp&nbsp
+
+  <input type="radio" id="lin" name="os" />
+  <label for="linux">Bad</label>
+</div><br><br>
+
+
+    <a class="btn btn-primary" href="Education.html" role="button">Previous</a>&nbsp&nbsp
+    <a class="btn btn-primary" href="Welcome.html" role="button">Submit</a>
+    <input  type="button"  onclick= "preview(); return false" value="Preview" />
+
+<div id="mugsappa"></div>
+
+
+
+
+
+
+
+</body>
+<script>
+  function preview(){
+    document.getElementById("mugsappa").innerHTML=document.myForm.mug1.innerText;
+  }
+  
+</script>
+</html>

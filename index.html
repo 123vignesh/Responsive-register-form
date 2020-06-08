@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <h1 class="ko">Register</h1>
+    <div id="menu-outer">
+        <div class="table">
+          <ul id="horizontal-list">
+            <li><a href="index.html" >1.About yourself</a>&nbsp&nbsp</li>
+            <li><a href="Contact.html">2.Contact info</a>&nbsp&nbsp</li>
+            <li><a href="Education.html">3.Education</a>&nbsp&nbsp</li>
+            <li><a href="Preview.html">4.Preview</a>&nbsp&nbsp</li>
+           
+          </ul>
+        </div>
+      </div>
+    <h2>Basic Info</h2>
+    <form name="myForm" id="fat">
+        <label class="control_name    required">Name</label><br>
+        <input type="text" placeholder="Firstname" id="mug1" name="mug1" onkeyup="validation1()"  required>&nbsp&nbsp<input type="text" placeholder="Lastname" required><br><br>
+    
+        
+        
+        <div class="form-input">
+          <label for="file-ip-1">Upload Image</label>
+          
+          <input type="file" id="file-ip-1" accept="image/*" onchange="showPreview(event);">
+          <div class="preview">
+          <img id="file-ip-1-preview">
+        </div>
+        </div>
+        
+      </div>
+<label class="control_dob  required">DOB</label><br>
+        <input type="date"><br>
+        <label class="control_Phone  required">Phone</label><br>
+        <input type="text"  onkeyup="validation()" id="usernamecheck"><br>
+        <label class="control_Email  required">Email</label><br>
+        <input type="email" id="emailcheck" onkeyup="validation2()"><br><br>
+        <a class="btn btn-primary btn" href="Contact.html" role="button">Next</a>
+
+    </form>
+   
+</body>
+<script src="index.js"></script>
+</html>
